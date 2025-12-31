@@ -1,0 +1,27 @@
+#
+# ~/.bashrc
+#
+
+eval "$(starship init bash)"
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export PATH="$PATH:/home/aiv/.cargo/bin"
+export PATH="$PATH:/home/aiv/RustRover-2025.1.5/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/home/aiv/bin/android-studio/bin"
+export PATH="$PATH:/home/aiv/bin"
+export PATH="$PATH:/home/aiv/bin/idea"
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias steam='flatpak run com.valvesoftware.Steam &'
+alias drawio='flatpak run com.jgraph.drawio.desktop &'
+alias sshs1='ssh aiv@10.0.0.128'
+alias sshs2='ssh aiv@10.0.0.129'
+alias v='nvim'
+PS1='[\u@\h \W]\$ '
+
+echo ""
+neofetch

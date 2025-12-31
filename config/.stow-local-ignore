@@ -1,0 +1,6 @@
+\.stow-local-ignore
+\.stowrc
+.*\.sh
+\.git
+\.github
+/scripts
