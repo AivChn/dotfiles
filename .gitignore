@@ -1,1 +1,2 @@
- */.stow*
+.stowrc
+.stow-local-ignore
