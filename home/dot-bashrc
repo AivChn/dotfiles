@@ -13,6 +13,9 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/aiv/bin/android-studio/bin"
 export PATH="$PATH:/home/aiv/bin"
 export PATH="$PATH:/home/aiv/bin/idea"
+export PATH="$PATH:$HOME/.tmuxifier/bin"
+
+export EDITOR="nvim"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -20,6 +23,8 @@ alias steam='flatpak run com.valvesoftware.Steam &'
 alias drawio='flatpak run com.jgraph.drawio.desktop &'
 alias v='nvim'
 PS1='[\u@\h \W]\$ '
+
+eval "$(tmuxifier init -)"
 
 echo ""
 neofetch

@@ -20,14 +20,14 @@ elif command -v yay; then
   PACKAGE_INSTALL="sudo yay -S --noconfirm "
   echo -e "${BLUE}==> ${GREEN} Updating packages...${NC}"
   yay -Syu
-  INSTALL_ITEMS="nvim github-cli git fzf make nodejs cargo gcc zip python3 npm lazygit zen-browser-bin libreoffice-fresh lollypop obsidian pycharm-community-edition intellij-idea-community-edition kitty telegram-desktop audacity discord postman-bin prismlauncher filezilla vlc gimp"
+  INSTALL_ITEMS="tmux nvim github-cli git fzf make nodejs cargo gcc zip python3 npm lazygit zen-browser-bin libreoffice-fresh lollypop obsidian pycharm-community-edition intellij-idea-community-edition kitty telegram-desktop audacity discord postman-bin prismlauncher filezilla vlc gimp"
   $PACKAGE_INSTALL $INSTALL_ITEMS
 elif command -v pacman; then
   echo -e "${BLUE}==> ${GREEN} Using pacman${NC}"
   PACKAGE_INSTALL="sudo pacman -S --noconfirm "
   echo -e "${BLUE}==> ${GREEN} Updating packages...${NC}"
   sudo pacman -Syu
-  INSTALL_ITEMS="nvim github-cli git fzf make nodejs cargo gcc zip python3 npm lazygit zen-browser-bin libreoffice-fresh lollypop "\
+  INSTALL_ITEMS="tmux nvim github-cli git fzf make nodejs cargo gcc zip python3 npm lazygit zen-browser-bin libreoffice-fresh lollypop "\
     "obsidian pycharm-community-edition intellij-idea-community-edition kitty telegram-desktop audacity discord" \ 
     "prismlauncher filezilla vlc gimp"
   $PACKAGE_INSTALL $INSTALL_ITEMS
