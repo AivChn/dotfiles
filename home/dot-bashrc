@@ -2,26 +2,26 @@
 # ~/.bashrc
 #
 
-eval "$(starship init bash)"
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export PATH="$PATH:/home/aiv/.cargo/bin"
-export PATH="$PATH:/home/aiv/RustRover-2025.1.5/bin"
-export PATH="$PATH:/usr/local/go/bin"
-export PATH="$PATH:/home/aiv/bin/android-studio/bin"
-export PATH="$PATH:/home/aiv/bin"
-export PATH="$PATH:/home/aiv/bin/idea"
-export PATH="$PATH:$HOME/.tmuxifier/bin"
+eval "$(starship init bash)"
 
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOMe/RustRover-2025.1.5/bin"
+export PATH="$PATH:$HOME/bin/android-studio/bin"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin/idea"
+export PATH="$PATH:$HOME/.tmuxifier/bin"
+export PATH="$PATH:/usr/local/go/bin"
+
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export EDITOR="nvim"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias steam='flatpak run com.valvesoftware.Steam &'
 alias drawio='flatpak run com.jgraph.drawio.desktop &'
-alias v='nvim'
 PS1='[\u@\h \W]\$ '
 
 eval "$(tmuxifier init -)"
