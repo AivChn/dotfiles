@@ -8,14 +8,18 @@ keymap.set("n", "<leader>jj", "100j", { desc = "Go down 100 lines" })
 keymap.set("n", "<leader>kk", "100k", { desc = "Go up 100 lines" })
 
 -- Move halfway up or down
-keymap.set("n", "<leader>ahead", function()
+keymap.set("n", "<leader>jb", function()
 	local distance = math.floor((vim.fn.line("$") - vim.fn.line(".")) / 2)
 	vim.cmd("normal! " .. distance .. "j")
 end, { desc = "jump halfway to the end of the file" })
-keymap.set("n", "<leader>back", function()
+keymap.set("n", "<leader>kb", function()
 	local distance = math.floor(vim.fn.line(".") / 2)
 	vim.cmd("normal! " .. distance .. "k")
 end, { desc = "Jump halfway to the beginning of the file" })
+
+-- remap C-u and C-d to center as well
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "remap of C-u" })
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "remap of C-d" })
 
 -- looks related keymaps
 keymap.set("n", "<leader>csh", ":nohl<CR>", { desc = "Clear search highlights" })
