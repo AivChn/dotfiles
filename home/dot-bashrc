@@ -22,6 +22,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias steam='flatpak run com.valvesoftware.Steam &'
 alias drawio='flatpak run com.jgraph.drawio.desktop &'
+alias tmux='tmux -u'
 PS1='[\u@\h \W]\$ '
 
 eval "$(tmuxifier init -)"
