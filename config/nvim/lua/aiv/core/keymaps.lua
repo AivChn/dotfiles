@@ -21,6 +21,10 @@ end, { desc = "Jump halfway to the beginning of the file" })
 keymap.set("n", "<C-u>", "<C-u>zz", { desc = "remap of C-u" })
 keymap.set("n", "<C-d>", "<C-d>zz", { desc = "remap of C-d" })
 
+-- remap {, } to also zz
+keymap.set("n", "{", "{zz", { desc = "remap of {" })
+keymap.set("n", "}", "}zz", { desc = "remap of }" })
+
 -- looks related keymaps
 keymap.set("n", "<leader>csh", ":nohl<CR>", { desc = "Clear search highlights" })
 
